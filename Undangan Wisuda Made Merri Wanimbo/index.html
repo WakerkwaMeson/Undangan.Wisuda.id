@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan wisuda-Ariante Wenda</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="invitation-card">
+        
+        <!-- DEKORASI TOGA (Tengah Atas) -->
+        <div class="decoration decoration--toga">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 5 L95 30 L90 40 L50 20 L10 40 L5 30 Z M40 20 L40 50 L30 60 L30 40 L20 45 L20 35 L40 25 Z M90 40 L90 85 C90 90 85 95 80 95 L20 95 C15 95 10 90 10 85 L10 40 L5 30 L95 30 Z"/>
+            </svg>
+        </div>
+
+        <!-- DEKORASI BALON (Kanan Bawah) -->
+        <div class="decoration decoration--balloons">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Balon-belon -->
+                <circle cx="120" cy="50" r="25"/>
+                <circle cx="150" cy="60" r="20"/>
+                <circle cx="100" cy="70" r="22"/>
+                <circle cx="130" cy="80" r="18"/>
+                <!-- Tali balon -->
+                <path d="M120 75 Q 115 100, 110 130" stroke="currentColor" stroke-width="1" fill="none"/>
+                <path d="M150 80 Q 145 105, 140 135" stroke="currentColor" stroke-width="1" fill="none"/>
+                <path d="M100 92 Q 95 117, 90 147" stroke="currentColor" stroke-width="1" fill="none"/>
+                <path d="M130 98 Q 125 123, 120 153" stroke="currentColor" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- KONTEN UTAMA UNDANGAN -->
+        <div class="card-content">
+            <div class="header">
+                <h1>Undangan</h1>
+                <h2>Ibadah Syukuran Wisuda</h2>
+            </div>
+
+            <div class="photo-frame">
+                <!-- GANTI [Link Foto] dengan URL foto wisuda Anda -->
+                <img src="imgs/merri.png" alt="Foto Wisudawan">
+            </div>
+
+            <div class="graduate-info">
+                <!-- GANTI [Nama Lengkap] dengan nama Anda -->
+                <h4 class="graduate-name">Ariante Wenda S.,Sos</h4>
+                <!-- GANTI informasi di bawah ini -->
+                <p>Program Studi <strong>Sariana Sosiologi</strong></p>
+                <p>Fakultas <strong>Fisip</strong></p>
+                <p><strong>Universitas Cendrawasi</strong></p>
+            </div>
+
+            <ul class="event-details">
+                <!-- GANTI detail acara di bawah ini -->
+                <li><strong>Acara:</strong> Wisuda Periode 2025</li>
+                <li><strong>Hari/Tanggal:</strong> Kamis, 20 November 2025</li>
+                <li><strong>Pukul:</strong> 03.00 WIB</li>
+            </ul>
+
+            <!-- 
+                TOMBOL INTERAKTIF
+                GANTI [Link Streaming] dengan link YouTube, Zoom, dll.
+            -->
+                
+            <!-- <button id="openButton" class="cta-button" data-link="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                Buka Undangan
+            </button> -->
+
+            <div class="footer">
+                <p>Merupakan kehormatan dan kebahagiaan bagi kami</p>
+                <p>jika Bapak/Ibu/Saudara/i berkenan memberikan doa restu.</p>
+                <br>
+                <p>Hormat Kami,</p>
+                <!-- GANTI [Nama Keluarga] -->
+                <p><strong>Ariate Wenda S.,Sos</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- JavaScript: Untuk Interaktivitas Tombol ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const openButton = document.getElementById('openButton');
+
+            openButton.addEventListener('click', function() {
+                const streamingLink = this.dataset.link;
+                window.open(streamingLink, '_blank');
+            });
+        });
+    </script>
+
+</body>
+</html>
